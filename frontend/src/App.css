@@ -1,0 +1,165 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+/* App.css */
+
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.card-container {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  flex-grow: 1; /* Take up the remaining space after the navbar */
+}
+
+.SupplierList {
+  width: 300px;
+  padding: 1rem;
+  background-color: #f1f1f1;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+.navigation {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 250px;
+  height: 100vh;
+  background-color: #343a40;
+  color: white;
+  overflow-y: auto;
+  padding-top: 20px;
+}
+.content-container {
+  display: flex;
+  justify-content: center; /* Centers horizontally */
+  align-items: center; /* Centers vertically */
+  flex-direction: column;
+  width: 100%;
+  padding: 20px;
+}
+
+.show_SupplierList {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: #f4f4f4; /* Light gray background */
+  min-height: 100vh; /* Full height */
+}
+
+.container {
+  width: 100%;
+  max-width: 800px; /* Max width for the container */
+  background-color: #ffffff; /* White background for content */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  border-radius: 8px; /* Rounded corners */
+  padding: 20px;
+}
+
+.search-bar {
+  display: flex;
+  justify-content: center; /* Center the search bar */
+  margin-bottom: 20px; /* Spacing below search bar */
+}
+
+input[type="text"] {
+  width: 100%; /* Full width */
+  max-width: 400px; /* Max width for input */
+  padding: 10px;
+  border: 1px solid #ccc; /* Light gray border */
+  border-radius: 5px; /* Rounded corners */
+  font-size: 16px; /* Font size */
+}
+
+input[type="text"]:focus {
+  border-color: #4CAF50; /* Green border on focus */
+  outline: none; /* Remove default outline */
+}
+
+.button {
+  display: flex;
+  justify-content: center; /* Center the button */
+  margin-bottom: 20px; /* Spacing below button */
+}
+
+button {
+  background-color: #4CAF50; /* Green background */
+  color: white; /* White text */
+  padding: 10px 20px; /* Padding */
+  border: none; /* No border */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor */
+  font-size: 16px; /* Font size */
+  transition: background-color 0.3s ease; /* Transition for hover effect */
+}
+
+button:hover {
+  background-color: #45a049; /* Darker green on hover */
+}
+
+.list {
+  margin-top: 20px; /* Spacing above the list */
+}
+
+.supplier-card {
+  background-color: #f9f9f9; /* Light background for each card */
+  border: 1px solid #ddd; /* Light border */
+  border-radius: 5px; /* Rounded corners */
+  padding: 15px; /* Padding for card */
+  margin-bottom: 15px; /* Spacing between cards */
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Subtle shadow for cards */
+  transition: transform 0.2s; /* Transition for hover effect */
+}
+
+.supplier-card:hover {
+  transform: scale(1.02); /* Slightly enlarge on hover */
+}
+
+.supplier-card h3 {
+  margin: 0 0 10px; /* Margin for title */
+  font-size: 18px; /* Title font size */
+}
+
+.supplier-card p {
+  margin: 5px 0; /* Margin for paragraphs */
+  font-size: 14px; /* Font size for paragraphs */
+}
