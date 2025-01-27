@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
+import Home from './component/Home';
 import Navbar from './component/Navbar';
 import Login from './component/login';
 import Register from './component/Register';
@@ -20,7 +21,8 @@ function App() {
     <Router>
       <div className="content-container">
         <Routes>
-          <Route path='/' element={<div className="content-container"><Login/></div>} />
+           <Route path="/" element={<Home />} />
+          <Route path='/login' element={<div className="content-container"><Login/></div>} />
           <Route path='/register' element={<div className="content-container"><Register/></div>} />
           <Route path='/supdetails/:id' element={<div className="content-container"><SupDetails/></div>} />
           <Route path='/supplierlist' element={<div className="content-container"><SupplierList/></div>} />

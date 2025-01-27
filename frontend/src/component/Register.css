@@ -3,8 +3,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    background-color: #f0f4f8;
+    height: 85vh;
+    width: 100vh;
+    background-color: #F0F8FF;
   }
   
   .register-form {
@@ -27,7 +28,7 @@
   .register-input {
     padding: 0.75rem;
     margin-bottom: 1rem;
-    border: 1px solid #ddd;
+    border: 1px solid #be3f3f;
     border-radius: 5px;
     font-size: 16px;
   }
@@ -47,7 +48,7 @@
   
   .register-button {
     padding: 0.75rem;
-    background-color: #007bff;
+    background-color: #191970;
     color: white;
     border: none;
     border-radius: 5px;

@@ -67,18 +67,18 @@ const Login = () => {
     }
   };
 
-  // Inline styles
+ 
+   // Inline styles
   const containerStyle = {
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
-    height: '100vh', // Full viewport height
-    margin: '0',     // No margin
-    padding: '0',    // No padding
-    backgroundImage: 'url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1HgEnTfquePZBRqJ1Fi7h-5EBMSvreCXEzw&s")', // Background image URL
-    backgroundSize: 'cover', // Make sure the image covers the entire container
-    backgroundPosition: 'center', // Center the image
-    backgroundRepeat: 'no-repeat', // Avoid tiling
+    height: '85vh',
+    width:'100vh',
+    padding: '20px',
+    background: '#F0F8FF', // Replace with your image path
+    backgroundSize: 'cover',
+    backgroundPosition: 'center'
   };
   
 
@@ -112,7 +112,7 @@ const Login = () => {
   const buttonStyle = {
     width: '100%',
     padding: '10px',
-    backgroundColor: '#4c5f38',
+    backgroundColor: '#191970',
     color: 'white',
     border: 'none',
     borderRadius: '5px',
@@ -123,7 +123,7 @@ const Login = () => {
 
   const linkStyle = {
     marginBottom: '15px',
-    color: '#4c5f38',
+    color: '#191970',
     textDecoration: 'none'
   };
 

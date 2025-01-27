@@ -107,7 +107,7 @@ const SupplierDetails = () => {
 // Inline styles
 const containerStyle = {
   padding: '20px',
-  backgroundColor: '#f9f9f9',
+  backgroundColor: '#F0F8FF',
   borderRadius: '8px',
   boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',
   maxWidth: '800px',
@@ -156,7 +156,7 @@ const tableStyle = {
 
 const thStyle = {
   padding: '12px',
-  backgroundColor: '#4c5f38',
+  backgroundColor: '#191970',
   color: '#fff',
   textAlign: 'left',
 };
