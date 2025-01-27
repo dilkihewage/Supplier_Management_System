@@ -41,13 +41,13 @@ const OrderForm = () => {
     padding: '20px',
     borderRadius: '8px',
     boxShadow: '0 4px 20px rgba(0, 0, 0, 0.1)',
-    backgroundColor: '#ffffff',
+    backgroundColor: '#F0F8FF',
   };
 
   const headerStyle = {
     textAlign: 'center',
     marginBottom: '20px',
-    color: '#28a745', // Green shade
+    color: '#191970', // Green shade
   };
 
   const labelStyle = {
@@ -78,7 +78,7 @@ const OrderForm = () => {
 
   const buttonStyle = {
     padding: '10px 20px',
-    backgroundColor: '#28a745',
+    backgroundColor: '#191970',
     color: '#ffffff',
     border: 'none',
     borderRadius: '4px',
@@ -90,7 +90,7 @@ const OrderForm = () => {
   };
 
   const buttonHoverStyle = {
-    backgroundColor: '#218838',
+    backgroundColor: '#191970',
   };
 
   return (
@@ -118,7 +118,7 @@ const OrderForm = () => {
           type="submit"
           style={buttonStyle}
           onMouseEnter={(e) => e.target.style.backgroundColor = buttonHoverStyle.backgroundColor}
-          onMouseLeave={(e) => e.target.style.backgroundColor = '#28a745'}
+          onMouseLeave={(e) => e.target.style.backgroundColor = '#191970'}
         >
           Submit Order
         </button>

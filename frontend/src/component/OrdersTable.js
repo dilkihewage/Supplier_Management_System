@@ -55,17 +55,17 @@ const OrderTable = () => {
 
 // Inline styles
 const containerStyle = {
-  padding: '20px',
-  backgroundColor: '#f9f9f9',
+  padding: '10px',
+  backgroundColor: '#F0F8FF',
   borderRadius: '8px',
   boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',
-  maxWidth: '800px',
+  maxWidth: '1000px',
   margin: '20px auto',
 };
 
 const headerStyle = {
   fontSize: '2rem',
-  color: '#333',
+  color: '#191970',
   marginBottom: '20px',
   textAlign: 'center',
 };
@@ -78,7 +78,7 @@ const tableStyle = {
 const thStyle = {
   border: '1px solid #ddd',
   padding: '12px',
-  backgroundColor: '#4c5f38',
+  backgroundColor: '#191970',
   color: '#fff',
   textAlign: 'left',
   fontWeight: 'bold',

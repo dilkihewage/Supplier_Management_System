@@ -11,7 +11,7 @@ const Dashboard = () => {
   const dashboardStyle = {
     textAlign: 'center',
     padding: '40px',
-    backgroundColor: '#f0f4f8',
+    backgroundColor: '#F0F8FF',
     minHeight: '100vh',
   };
 
@@ -45,7 +45,7 @@ const Dashboard = () => {
   const cardHeaderStyle = {
     marginBottom: '10px',
     fontSize: '1.5rem',
-    color: '#28a745',
+    color: '#191970',
   };
 
   const cardParagraphStyle = {

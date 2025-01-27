@@ -11,7 +11,8 @@ const SupplierList = () => {
   const [searchQuery, setSearchQuery] = useState('');
   const [filteredSupplier, setFilteredSupplier] = useState([]);
   
-  const COLORS = ['#1B5E20', '#66BB6A', '#81C784', '#A5D6A7', '#C8E6C9', '#388E3C', '#2E7D32'];
+  const COLORS = ['#0D47A1', '#1976D2', '#42A5F5', '#64B5F6', '#90CAF9', '#1565C0', '#1E88E5'];
+
 
   useEffect(() => {
     const lowerCaseQuery = searchQuery.toLowerCase();
@@ -147,7 +148,7 @@ const SupplierList = () => {
         </div>
         <div className="button" style={{ marginBottom: '20px' }}>
           <button onClick={generatePDF} style={{
-            backgroundColor: '#4CAF50', 
+            backgroundColor: '#191970', 
             color: 'white', 
             padding: '10px 20px', 
             border: 'none', 

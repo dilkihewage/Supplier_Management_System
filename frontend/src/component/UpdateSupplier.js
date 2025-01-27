@@ -43,71 +43,8 @@ function UpdateSupplier() {
         setSupplier({ ...supplier, [e.target.name]: e.target.value });
     };
 
-    const validateInputs = () => {
-        const {
-            supplierName,
-            uniqueSupplierID,
-            email,
-            phoneNumber,
-            address,
-            typeOfGoods,
-            supplyCapacity,
-            bankAccountDetails,
-            paymentTerms,
-        } = supplier;
-
-        const regexName = /^[A-Za-z\s]+$/;
-        const regexUniqueID = /^SUP\d+$/;
-        const regexEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-        const regexPhone = /^07\d{8}$/;
-        const regexAddress = /^[A-Za-z\s]+$/;
-        const regexTypeOfGoods = /^[A-Za-z\s]+$/;
-        const regexSupplyCapacity = /^\d+$/;
-        const regexBankDetails = /^[A-Za-z0-9\s]+$/;
-        const regexPaymentTerms = /^[A-Za-z\s]+$/;
-
-        if (!regexName.test(supplierName)) {
-            alert("Supplier Name should only contain letters.");
-            return false;
-        }
-        if (!regexUniqueID.test(uniqueSupplierID)) {
-            alert("Unique Supplier ID should start with 'SUP' followed by numbers.");
-            return false;
-        }
-        if (!regexEmail.test(email)) {
-            alert("Please enter a valid email address.");
-            return false;
-        }
-        if (!regexPhone.test(phoneNumber)) {
-            alert("Phone Number must be exactly 10 digits and start with'07'");
-            return false;
-        }
-        if (!regexAddress.test(address)) {
-            alert("Address should only contain letters.");
-            return false;
-        }
-        if (!regexTypeOfGoods.test(typeOfGoods)) {
-            alert("Type of Goods should only contain letters.");
-            return false;
-        }
-        if (!regexSupplyCapacity.test(supplyCapacity)) {
-            alert("Supply Capacity should only contain numbers.");
-            return false;
-        }
-        if (!regexBankDetails.test(bankAccountDetails)) {
-            alert("Bank Account Details should contain only letters and numbers.");
-            return false;
-        }
-        if (!regexPaymentTerms.test(paymentTerms)) {
-            alert("Payment Terms should only contain letters.");
-            return false;
-        }
-        return true;
-    };
-
     const onSubmit = (e) => {
         e.preventDefault();
-        if (!validateInputs()) return; // Validate inputs before submitting
 
         const data = {
             supplierName: supplier.supplierName,
@@ -132,17 +69,18 @@ function UpdateSupplier() {
     };
 
     return (
-        <div className="UpdateSupplier">
-            <div className="container">
+        <div className="UpdateSupplier" style={containerStyle}>
+            <div style={innerContainerStyle}>
                 <div className="row">
-                    <div className="col-md-8 m-auto">
+                    <div className="col-md-12">
                         <br />
-                        <Link to="/" className="btn btn-outline-warning float-left">
-                            Show Supplier list
+                        <Link to="/" style={backButtonStyle}>
+                            Show Supplier List
                         </Link>
                     </div>
                 </div>
-                <div className="col-md-8 m-auto">
+                <div className="col-md-12">
+                    <h2 style={headerStyle}>Update Supplier</h2>
                     <form noValidate onSubmit={onSubmit}>
                         <div className='form-group'>
                             <label htmlFor='supplierName'>Supplier Name</label>
@@ -254,7 +192,7 @@ function UpdateSupplier() {
                         <br />
                         <button
                             type="submit"
-                            className='btn btn-outline-info btn-lg btn-block'>
+                            style={submitButtonStyle}>
                             Update Supplier
                         </button>
                     </form>
@@ -263,4 +201,60 @@ function UpdateSupplier() {
         </div>
     );
 }
+
 export default UpdateSupplier;
+
+// Custom Styles
+const containerStyle = {
+    padding: '20px',
+    backgroundColor: '#F5F5F5',
+    minHeight: '100vh',
+    width:'400hv',
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+};
+
+const innerContainerStyle = {
+    backgroundColor: '#E3F2FD',
+    borderRadius: '8px',
+    padding: '30px',
+    width: '200hv',
+    boxShadow: '0 4px 8px rgba(0, 0, 0, 0.2)',
+};
+
+const headerStyle = {
+    textAlign: 'center',
+    marginBottom: '30px',
+    fontSize: '24px',
+    color: '#1565C0',
+    fontWeight: 'bold',
+};
+
+const backButtonStyle = {
+    textDecoration: 'none',
+    padding: '10px 20px',
+    backgroundColor: '#1565C0',
+    color: 'white',
+    borderRadius: '5px',
+    marginBottom: '20px',
+    display: 'inline-block',
+};
+
+const submitButtonStyle = {
+    width: '100%',
+    padding: '12px',
+    backgroundColor: '#1E88E5',
+    color: 'white',
+    border: 'none',
+    borderRadius: '5px',
+    fontSize: '16px',
+    fontWeight: 'bold',
+    cursor: 'pointer',
+    textAlign: 'center',
+    transition: 'background-color 0.3s ease',
+};
+
+submitButtonStyle[':hover'] = {
+    backgroundColor: '#0D47A1',
+};
