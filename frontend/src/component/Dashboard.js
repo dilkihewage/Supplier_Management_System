@@ -53,16 +53,18 @@ const Dashboard = () => {
     fontSize: '1rem',
   };
 
+  const cards = [
+    { title: 'Add New Suppliers', path: '/insert', description: 'Add and manage suppliers in the system.' },
+    { title: 'Suppliers List', path: '/supplierlist', description: 'Manage suppliers in the system.' },
+    { title: 'Place Orders', path: '/place-order', description: 'Place new orders with suppliers.' },
+    { title: 'Order Table', path: '/ordertable', description: 'View and manage order details in tabular format.' },
+  ];
+
   return (
     <div style={dashboardStyle}>
       <h2 style={headerStyle}>Supplier Management Dashboard</h2>
       <div style={dashboardCardsStyle}>
-        {[
-          { title: 'Add New Suppliers', path: '/insert', description: 'Add and manage suppliers in the system.' },
-          { title: 'Suppliers List', path: '/supplierlist', description: 'Manage suppliers in the system.' },
-          { title: 'Place Orders', path: '/place-order', description: 'Place new orders with suppliers.' },
-          { title: 'Total Orders', path: '#', description: 'View all current and completed orders.' },
-        ].map(({ title, path, description }) => (
+        {cards.map(({ title, path, description }) => (
           <div
             key={title}
             style={cardStyle}

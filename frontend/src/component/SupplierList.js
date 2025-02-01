@@ -102,7 +102,7 @@ const SupplierList = () => {
       columns: tableColumn,
       body: tableRows,
       theme: "grid",
-      headStyles: { fillColor: [0, 0, 0], textColor: [255, 255, 255] }, 
+      headStyles: { fillColor: [0, 0, 0], textColor: [256, 255, 255] }, 
       styles: { fontSize: 10 },
       margin: { horizontal: 10 },
       columnStyles: {

@@ -18,7 +18,7 @@ export default function HomePage() {
 
 const styles = {
   pageContainer: {
-    background: 'linear-gradient(to right, rgba(76, 122, 175, 0.7), rgba(33, 150, 243, 0.7)), url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1HgEnTfquePZBRqJ1Fi7h-5EBMSvreCXEzw&s")',
+    background: 'linear-gradient(to right, rgba(201, 250, 213, 0.7), rgba(33, 150, 243, 0.7)), url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1HgEnTfquePZBRqJ1Fi7h-5EBMSvreCXEzw&s")',
     backgroundSize: 'cover',
     backgroundPosition: 'center',
     backgroundRepeat: 'no-repeat',
